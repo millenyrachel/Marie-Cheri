@@ -1,71 +1,37 @@
 pizzaJson = [
   {
     id: 1,
-    name: "",
-    img: "images/mussarela 1.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description: "Molho de tomate, camada dupla de mussarela e orégano",
+    name: "Dulce de Leite Frappe",
+    img: "images/doce de leite.jpg",
+    price: [12.0, 14.5, 17.0],
+    sizes: ["300ml", "500ml", "700ml"],
+    description:
+      "uma combinação irresistível de doçura e cremosidade que traz o sabor do doce de leite em cada gole.",
   },
   {
     id: 2,
-    name: "Gelato Caramelado",
+    name: "Caramel Dream",
     img: "images/2.jpg",
-    price: [21.0, 24.0, 26.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
+    price: [13.0, 15.0, 16.0],
+    sizes: ["300ml", "500ml", "700ml"],
     description:
-      "Molho de tomate, mussarela, calabresa fatiada, cebola e orégano",
+      "uma irresistível combinação de cremosidade e sabor intenso de caramelo",
   },
   {
     id: 3,
-    name: "",
-    img: "images/quatro queijo 3.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description:
-      "Molho de tomate, camadas de mussarela, provolone, parmessão, gorgonzola e orégano",
+    name: "Cherry Bliss",
+    img: "images/cherry.jpg",
+    price: [13.0, 15.0, 18.0],
+    sizes: ["300ml", "500ml", "700ml"],
+    description: "uma explosão de sabor com a doçura suculenta das cerejas",
   },
   {
     id: 4,
-    name: "",
-    img: "images/brasileira.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description:
-      "Molho de tomate, mussarela, calabresa picada, palmito, champignon, azeitonas e orégano",
-  },
-  {
-    id: 5,
-    name: "",
-    img: "images/portuguesa.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description:
-      "Molho de tomate, mussarela, presunto, ovos, cebolas, pimentão, azeitona  e orégano",
-  },
-  {
-    id: 6,
-    name: "",
-    img: "images/da casa.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description:
-      "Molho de tomate, mussarela, carne de sol, tomates em cubos, coentro, cebola, azeitona, catupiry e orégano",
-  },
-  {
-    id: 7,
-    name: "",
-    img: "images/banana.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description: "Mussarela, banana, canela e açúcar",
-  },
-  {
-    id: 8,
-    name: "",
+    name: "Strawberry Swirl",
     img: "images/morango.jpg",
-    price: [20.0, 23.0, 25.0],
-    sizes: ["6 fatias", "8 fatias", "12 fatias"],
-    description: "Creme de leite, lascas de chocolate e morangos",
-  },
+    price: [13.0, 15.0, 18.0],
+    sizes: ["300ml", "500ml", "700ml"],
+    description:
+      " frappuccino vibrante que captura a essência fresca dos morangos",
+  }
 ];

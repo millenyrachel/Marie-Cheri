@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Abril+Fatface');
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     background-color:#fcefe9d2;
-    font-family:'Lato', Helvetica, Arial;
+    font-family:'Abril Fatface';
     font-size:15px;
     display:flex;
     margin: 10px;;
@@ -22,15 +22,16 @@ header {
     left:0;
     top:0;
     right:0;
-    height:150px;
-    background-color:#ecbbbb;
+    height:130px;
+    background-color: #fdcddd98;
+    background-image:url(images/flores.png);
     display:flex; /* none; */
     justify-content:space-between; /* flex-end; */
     align-items: center;
 }
 
 .header img {
-     width:250px;
+     width:260px;
     height:190px;
     background-color:#eeeeee00;
     border-radius:100px;
@@ -47,7 +48,7 @@ header h1 {
     font-size: 22px;
     background-color: #948a8a2a;
     padding: 5px 30px;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
 }
 
@@ -65,7 +66,7 @@ header h1 {
 aside {
     background-color:#ffffffe5;
     width:0vw;
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Abril Fatface';
     transition:all ease .2s;
     overflow-x:hidden;
 }
@@ -85,7 +86,7 @@ main {
 }
 
 h1, h2 {
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Abril Fatface';
     text-align: center;
 }
 
@@ -96,9 +97,9 @@ h1, h2 {
 
 .pizza-item {
     text-align: center;
-    max-width:250px;
-    font-family:'Hepta Slab', Helvetica, Arial;
-    margin:0 auto 50px auto;
+    max-width:200px;
+    font-family:'Abril Fatface';
+    margin:50px auto 10px auto;
 }
 
 .pizza-item a {
@@ -112,8 +113,8 @@ h1, h2 {
     width:200px;
     height:200px;
     background-color:#eeeeee;
-    border-radius:100px;
-    box-shadow:0px 10px 50px rgba(15, 15, 15, 0.2);
+    border-radius:50px;
+    box-shadow:0px 10px 50px rgba(124, 120, 120, 0.2);
 }
 
 .pizza-item--img img {
@@ -125,37 +126,37 @@ h1, h2 {
     width:50px;
     height:50px;
     line-height:50px;
-    border-radius:25px;
-    background-color:#857272a6;
+    border-radius:250px;
+    background-color:#ff98bb9d;
     text-align:center;
-    color:#ffffff9d;
-    font-size:22px;
+    color:#e9487e9d;
+    font-size:25px;
     cursor:pointer;
-    margin-top:-25px;
+    margin-top:-30px;
     transition:all ease .10s;
 }
 
 .pizza-item a:hover .pizza-item--add {
-    background-color:#0f0e0e9a;
+    background-color:#fcd1e59a;
 }
 
 .pizza-item--price {
-    font-size:20px;
-    color:#520606;
-    margin-top:5px;
+    font-size:25px;
+    color:#ff78a5;
+    margin-top:3px;
 }
 
 .pizza-item--name {
     font-size:25px;
     font-weight: bold;
-    color:#350101;
-    margin-top:5px;
+    color:#18000c;
+    margin-top:3px;
 }
 
 .pizza-item--desc {
-    font-size:13px;
-    color:#440202be;
-    margin-top:8px;
+    font-size:15px;
+    color:#ff78a5;
+    margin-top:5px;
 }
 
 .pizzaWindowArea {
@@ -175,7 +176,7 @@ h1, h2 {
 .pizzaWindowBody {
     width:900px;
     background-color:#f7f2f2;
-    border-radius:10px;
+    border-radius:100px;
     box-shadow:0px 0px 15px #130000;
     display:flex;
     margin:20px 0px;
@@ -202,7 +203,7 @@ h1, h2 {
 
 .pizzaInfo {
     flex:1;
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Abril Fatface';
     padding-bottom:50px;
 }
 
@@ -214,7 +215,7 @@ h1, h2 {
     font-size:15px;
     color:#a19c9c;
     margin-top:10px;
-    font-family:'Lato',Helvetica,Arial;
+    font-family:'Abril Fatface';
 }
 
 .pizzaInfo--sector {
@@ -227,7 +228,7 @@ h1, h2 {
 
 .pizzaInfo--sizes {
     display:inline-flex;
-    border-radius:10px;
+    border-radius:100px;
     overflow:hidden;
 }
 
@@ -245,7 +246,7 @@ h1, h2 {
 }
 
 .pizzaInfo--size.selected {
-    background-color:#800202f6;
+    background-color:#ff78a5;
     color:#050505;
 }
 
@@ -272,7 +273,7 @@ h1, h2 {
 .pizzaInfo--qtarea {
     display:inline-flex;
     background-color:#eeebeb;
-    border-radius:10px;
+    border-radius:100px;
     height:30px;
 }
 
@@ -298,7 +299,7 @@ h1, h2 {
     margin-top:30px;
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
+    background-color:#d04875;
     color:#FFF;
     display:inline-block;
     cursor:pointer;
@@ -306,7 +307,7 @@ h1, h2 {
 }
 
 .pizzaInfo--addButton:hover {
-    background-color:#32a345;
+    background-color:#a53262af;
 }
 
 .pizzaInfo--cancelButton {
@@ -345,7 +346,7 @@ h1, h2 {
 .cart--item--qtarea {
     display:inline-flex;
     background-color:#d3d0d0;
-    border-radius:10px;
+    border-radius:100px;
     height:30px;
 }
 
@@ -388,8 +389,8 @@ h1, h2 {
 
 .cart--finalizar {
     padding:20px 20px;
-    border-radius:20px;
-    background-color:#39bd4f;
+    border-radius:200px;
+    background-color:#d04875;
     color:#FFF;
     cursor:pointer;
     text-align:center;

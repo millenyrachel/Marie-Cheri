@@ -1,4 +1,3 @@
-
 // Aula 05
 // Criar a variável modalKey será global
 let modalKey = 0;

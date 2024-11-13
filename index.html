@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-     <!-- modelos de pizza na lista e no carrinho -->
-    <div class="models">
 
+
+ <!-- modelos de pizza na lista e no carrinho -->
+    <div class="models">
         <!-- pizza na lista -->
         <div class="pizza-item">
             <a href="">
@@ -23,7 +24,7 @@
             <div class="pizza-item--desc">--</div>
         </div>
 
-        <!-- pizza no carrinho -->
+       
         <div class="cart--item">
             <img src="" />
             <div class="cart--item-nome">--</div>
@@ -42,43 +43,79 @@
     <div class="header img">
         <img src="images/logo_marie_cheri-removebg-preview.png" />
     </div>
-        <div class="menu-openner"><span>0</span>☕</div>
+        <div class="menu-openner"><span>0</span>☕<div class=""></div></div>
     </header>
     <!-- /menu-openner -->
 
     <!-- conteudo principal -->
     <main>
+        <h2>ㅤ</h2>
+         <div class="foto-destaque-container">
+        <img src="images/loja.webp" alt="Descrição da nova imagem" class="foto-destaque">
+         <p class="foto-destaque-texto">Marie Chéri é muito mais do que uma simples cafeteria — é um convite para uma experiência única e acolhedora, onde o sabor, o aroma e a tradição se encontram em perfeita harmonia. Localizada em um cantinho charmoso, nossa cafeteria foi inspirada no espírito acolhedor das tradicionais pâtisseries francesas, com um toque especial de elegância e sofisticação.</p>
+</div>
+    </div>
+        <h2>ㅤ</h2>
+        <h1></h1>
+       <div class="galeria">
+        
+        <div class="foto-container">
+        <img src="images/suco.jpg" alt="Imagem 1" class="foto">
+        <p></p>
+     </div>
+     <div class="foto-container">
+        <img src="images/lalala.jpg" alt="Imagem 2" class="foto">
+        <p></p>
+     </div>
+     <div class="foto-container">
+        <img src="images/chouxm.jpg" alt="Imagem 3" class="foto">
+        <p></p>
+     </div>
+    </div>
+    
          <h2>ㅤ</h2>
-        <h2>Cafés Gelados</h2>
+        <h1>Cardápio</h1>
 
 
  <div class="pizza-area"></div>
+  <section class="mais-produtos">
+        <h2>Mais Produtos</h2>
+        <div class="produtos-lista" id="produtos-lista"></div>
+    </section>
     </main>
     <!-- /conteudo principal -->
 
     <!-- aside do carrinho -->
-    <aside>
-        <div class="cart--area">
-            <div class="menu-closer"></i></div>
-            <h1>Suas Pizzas</h1>
-            <div class="cart"></div>
-            <div class="cart--details">
-                <div class="cart--totalitem subtotal">
-                    <span>Subtotal</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cart--totalitem desconto">
-                    <span>Desconto</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cart--totalitem total big">
-                    <span>Total</span>
-                    <span>R$ --</span>
-                </div>
-                <div class="cart--finalizar">Finalizar a compra</div>
+<aside>
+    <div class="cart--area">
+        <!-- Novo botão de fechar com o símbolo X -->
+      
+        <h1>Suas compras</h1>
+        <div class="cart"></div>
+        <div class="cart--details">
+            <div class="cart--totalitem subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
             </div>
+            <div class="cart--totalitem desconto">
+                <span>Desconto</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--totalitem total big">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+            <div class="cart--finalizar">Finalizar a compra</div>
+        
+            <h1>pague com pix</h1>
         </div>
-    </aside>
+    </div>
+  <div class="qr-container">
+     <div class="qr-message">Pague com Pix</div>
+        <img src="images/qrcode.jpg" alt="QR Code" width="200" />
+    </div>
+</aside>
+
     <!-- /aside do carrinho -->
 
     <!-- janela modal .pizzaWindowArea -->
@@ -118,9 +155,26 @@
             </div>
         </div>
     </div>
-    <!-- /janela modal .pizzaWindowArea -->
+       <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo_marie_cheri-removebg-preview.png" alt="Logo Marie Chéri">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Marie Chéri. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://www.seusite.com" target="_blank">Seu Nome</a></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">F</a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">I</a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">T</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="pizzas.js"></script>
     <script src="script.js"></script>
+    <script src="cafe.js"></script>
 </body>
+
 </html>

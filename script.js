@@ -170,11 +170,9 @@ const adicionarNoCarrinho = () => {
 const abrirCarrinho = () => {
   console.log("Qtd de itens no carrinho " + cart.length);
   if (cart.length > 0) {
-   
     seleciona("aside").classList.add("show");
     seleciona("header").style.display = "flex"; // Mostrar barra superior
   }
-
 
   seleciona(".menu-openner").addEventListener("click", () => {
     if (cart.length > 0) {
@@ -184,11 +182,11 @@ const abrirCarrinho = () => {
   });
 };
 
+// Fechar o carrinho ao clicar no "X"
 const fecharCarrinho = () => {
-
   seleciona(".menu-closer").addEventListener("click", () => {
-    seleciona("aside").style.left = "100vw"; 
-    seleciona("header").style.display = "flex";
+    seleciona("aside").style.left = "100vw"; // Esconde o carrinho
+    seleciona("header").style.display = "flex"; // Exibe o cabeçalho
   });
 };
 
@@ -205,7 +203,6 @@ const atualizarCarrinho = () => {
     let total = 0;
 
     for (let i in cart) {
-   
       let pizzaItem = pizzaJson.find((item) => item.id == cart[i].id);
       console.log(pizzaItem);
 
@@ -226,9 +223,9 @@ const atualizarCarrinho = () => {
         .querySelector(".cart--item-qtmais")
         .addEventListener("click", () => {
           console.log("Clicou no botão mais");
-       
+
           cart[i].qt++;
-    
+
           atualizarCarrinho();
         });
 
@@ -237,33 +234,26 @@ const atualizarCarrinho = () => {
         .addEventListener("click", () => {
           console.log("Clicou no botão menos");
           if (cart[i].qt > 1) {
-         
             cart[i].qt--;
           } else {
-          
-            
             cart.splice(i, 1);
           }
 
           cart.length < 1 ? (seleciona("header").style.display = "flex") : "";
 
-          
           atualizarCarrinho();
         });
 
       seleciona(".cart").append(cartItem);
-    } 
-    
+    }
+
     desconto = subtotal * 0;
     total = subtotal - desconto;
 
-    
     seleciona(".subtotal span:last-child").innerHTML = formatoReal(subtotal);
     seleciona(".desconto span:last-child").innerHTML = formatoReal(desconto);
     seleciona(".total span:last-child").innerHTML = formatoReal(total);
   } else {
-   
-    
     seleciona("aside").classList.remove("show");
     seleciona("aside").style.left = "100vw";
   }
@@ -278,53 +268,46 @@ const finalizarCompra = () => {
     alert("Pedido Feito");
   });
 };
-
-
+const pagamento = () => {
+  seleciona(".pagamento").addEventListener("click", () => {
+    console.log("Pagar com pix");
+    seleciona("aside").classList.remove("show");
+    seleciona("aside").style.left = "100vw";
+    seleciona("header").style.display = "flex";
+    alert("Pagamento realizado.");
+  });
+};
 
 pizzaJson.map((item, index) => {
- 
-  
   let pizzaItem = document.querySelector(".models .pizza-item").cloneNode(true);
 
-  
   seleciona(".pizza-area").append(pizzaItem);
 
-  
   preencheDadosDasPizzas(pizzaItem, item, index);
 
-  
   pizzaItem.querySelector(".pizza-item a").addEventListener("click", (e) => {
     e.preventDefault();
     console.log("Clicou na pizza");
 
     let chave = pegarKey(e);
 
-
-    
     abrirModal();
 
-    
     preencheDadosModal(item);
 
-    
     preencherTamanhos(chave);
 
-    
     seleciona(".pizzaInfo--qt").innerHTML = quantPizzas;
 
-  
-    
     escolherTamanhoPreco(chave);
   });
 
   botoesFechar();
-}); 
-
-
+});
 
 mudarQuantidade();
 
 adicionarNoCarrinho();
 atualizarCarrinho();
-fecharCarrinho();
+fecharCarrinho(); // Chamar a função para fechar o carrinho
 finalizarCompra();

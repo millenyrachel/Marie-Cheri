@@ -1,14 +1,11 @@
-@import url('https://fonts.google.com/share?selection.family=Lilita+One');
-@import url('https://fonts.google.com/share?selection.family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400');
-@import url('https://fonts.google.com/share?selection.family=Libre+Baskerville:ital,wght@0,400;0,700;1,400');
-
+@import url('https://fonts.google.com/share?selection.family=Abril+Fatface');
 * {
     box-sizing: border-box;
 }
 
 body {
     background-color:#f7bcd8f8;
-    font-family:'Libre Baskerville';
+    font-family:'Abril Fatface',sans-serif;
     font-size:15px;
     display:flex;
     margin: 10px;;
@@ -27,7 +24,7 @@ header {
     right:0;
     height:130px;
     background-color: #c3f0fdbe;
-    background-image:url(images/fundoazul.jpeg);
+    background-image:url(images/fundozul.jpeg);
     display:flex; /* none; */
     justify-content:space-between; /* flex-end; */
     align-items: center;
@@ -50,7 +47,7 @@ header h1 {
 .menu-openner {
     margin-right: 15px;
     font-size: 22px;
-    background-color: #948a8a2a;
+    background-color:#ff98bb9d;
     padding: 5px 30px;
     border-radius: 100px;
     cursor: pointer;
@@ -68,21 +65,27 @@ header h1 {
 }
 
 aside {
-    position: static;
-    background-color:#ffa9db71;
-    width: 5px;
-    font-family:'Libre Baskerville';
+   position: absolute;
+    background-color:#ffa9db;
+    width: 0px;
+    font-family:'Abril Fatface',sans-serif;
     transition:all ease .2s;
     overflow-x:hidden;
+    transform: translateX(100%);
 }
 
 aside.show {
-    width: 30vw;
-    height: 1000px;
+    width: 500px;
+    height: 100vh;
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    transform: translateX(-100%);
 }
 
 .cart--area {
-    padding: 100px;;
+    padding: 100px;
+   
 }
 
 main {
@@ -92,7 +95,7 @@ main {
 }
 
 h1, h2 {
-    font-family:'Libre Baskerville', cursive;
+    font-family:'Abril Fatface', sans-serif;
     text-align: center;
 }
 
@@ -104,7 +107,7 @@ h1, h2 {
 .pizza-item {
     text-align: center;
     max-width:200px;
-    font-family:'Libre Baskerville', cursive;
+    font-family:'Abril Fatface', sans-serif;
     margin:50px auto 10px auto;
 }
 
@@ -126,14 +129,14 @@ h1, h2 {
 .pizza-item--img img {
     width:100%;
     height:300px;
-    border-radius: 70px;
+    border-radius: 20px;
 }
 
 .pizza-item--add {
     width:50px;
     height:50px;
     line-height:50px;
-    border-radius:250px;
+    border-radius:20px;
     background-color:#ff98bb9d;
     text-align:center;
     color:#e9487e9d;
@@ -156,7 +159,7 @@ h1, h2 {
 .pizza-item--name {
     font-size:25px;
     font-weight: bold;
-    color:#18000c;
+    color:#f5e8ee;
     margin-top:3px;
 }
 
@@ -210,7 +213,7 @@ h1, h2 {
 
 .pizzaInfo {
     flex:1;
-    font-family:'Libre Baskerville';
+    font-family:'Abril Fatface',sans-serif;
     padding-bottom:50px;
 }
 
@@ -222,7 +225,7 @@ h1, h2 {
     font-size:15px;
     color:#a19c9c;
     margin-top:10px;
-    font-family:'Libre Baskerville';
+    font-family:'Abril Fatface',sans-serif;
 }
 
 .pizzaInfo--sector {
@@ -353,7 +356,7 @@ h1, h2 {
 
 .cart--item--qtarea {
     display:inline-flex;
-    background-color:#d3d0d0;
+    background-color:#ffcfdd9a;
     border-radius:100px;
     height:30px;
 }
@@ -408,7 +411,7 @@ h1, h2 {
 }
 
 .cart--finalizar:hover {
-    background-color:#5b9264;
+    background-color:#acbfd4;
 }
 
 @media (max-width:1000px) {
@@ -464,17 +467,17 @@ h1, h2 {
         width:100vw;
         display:block;
         padding:20px;
-        border-radius:0;
+        border-radius: 100px;;
         box-shadow:none;
         margin:0;
     }
 
-    .pizzaBig img {
-        width: 75%;
-        height: auto;
-        border-radius: 90px;
-    }
-
+  .pizzaBig img {
+    width: 400px;         /* Definindo a largura */
+    height: 400px;        /* Definindo a altura igual à largura */
+    border-radius: 50%;   /* Tornando a imagem redonda */
+    object-fit: cover;    /* Garante que a imagem cubra a área sem distorção */
+}
     .pizzaInfo h1 {
         margin-top:20px;
     }
@@ -610,7 +613,7 @@ h1, h2 {
 }
 .foto-destaque-texto {
     font-size: 20px;
-    font-family: 'Playwrite England SemiJoined', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Abril Fatface',sans-serif;
     font-weight: bold;
     color: #e25a9e;
     margin-top: 10px; /* Espaço entre a imagem e o texto */
@@ -688,8 +691,8 @@ main {
 
 /* Rodapé */
 footer {
-    background-color: #333; /* Cor de fundo escura para o rodapé */
-    color: #fff; /* Cor do texto */
+    background-color: #fff1f1; /* Cor de fundo escura para o rodapé */
+    color: #000000; /* Cor do texto */
     padding: 20px 0; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
     width: 100%; /* Garantir que o rodapé ocupe toda a largura */
@@ -699,7 +702,7 @@ footer {
 .footer-content {
     max-width: 1200px; /* Limita a largura do conteúdo */
     margin: 0 auto; /* Centraliza o conteúdo */
-    padding: 10px;
+    padding: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -717,7 +720,7 @@ footer {
 }
 
 .footer-info a {
-    color: #fff; /* Cor do link */
+    color: #f06996; /* Cor do link */
     text-decoration: none; /* Remove sublinhado do link */
 }
 
@@ -732,9 +735,9 @@ footer {
 
 .social-icon {
     display: inline-block;
-    background-color: #555; /* Cor de fundo dos ícones */
-    color: #fff; /* Cor do ícone */
-    border-radius: 50%; /* Deixa os ícones redondos */
+    background-color: #55555500; /* Cor de fundo dos ícones */
+    color: #ffffff00; /* Cor do ícone */
+    border-radius: 0%; /* Deixa os ícones redondos */
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -745,7 +748,7 @@ footer {
 }
 
 .social-icon:hover {
-    background-color: #888; /* Cor de fundo quando passar o mouse */
+    background-color: #88888800; /* Cor de fundo quando passar o mouse */
 }
 
 /* Estilo para a mensagem e QR Code */
@@ -767,4 +770,31 @@ footer {
 .qr-container img {
     width: 200px;
     height: auto;
+}
+/* Estilos para os ícones sociais no cabeçalho */
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espaço entre os ícones */
+    align-items: center;
+}
+
+.social-icons a {
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.social-icons img {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
+    transition: transform 0.3s ease; /* Efeito de transição para o hover */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Aumenta um pouco o tamanho do ícone quando o mouse passar por cima */
+}
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  color:#fde9c3;
 }

@@ -184,7 +184,7 @@ const abrirCarrinho = () => {
 
 // Fechar o carrinho ao clicar no "X"
 const fecharCarrinho = () => {
-  seleciona(".menu-closer").addEventListener("click", () => {
+  seleciona(".cart--finalizar").addEventListener("click", () => {
     seleciona("aside").style.left = "100vw"; // Esconde o carrinho
     seleciona("header").style.display = "flex"; // Exibe o cabeçalho
   });
@@ -266,6 +266,7 @@ const finalizarCompra = () => {
     seleciona("aside").style.left = "100vw";
     seleciona("header").style.display = "flex";
     alert("Pedido Feito");
+    
   });
 };
 const pagamento = () => {
@@ -311,3 +312,4 @@ adicionarNoCarrinho();
 atualizarCarrinho();
 fecharCarrinho(); // Chamar a função para fechar o carrinho
 finalizarCompra();
+

@@ -1,1 +1,180 @@
+/* Reset de estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Corpo da página */
+body {
+    background-color: #9df0ff57;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffb4b4fb;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-family: 'Hepta Slab', Helvetica, Arial, sans-serif;
+}
+
+/* Formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', Helvetica, Arial;
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+/* Título do formulário */
+form h2 {
+    margin: 50px;
+    font-family: 'Hepta Slab', Helvetica, Arial;
+    font-size: 24px;
+    text-align: center;
+    color: #ffb8ca;
+    margin-bottom: 20px;
+}
+
+/* Rótulos dos campos */
+form label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Campos de entrada */
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Alteração da borda dos campos de entrada ao focar */
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #ffbec3;
+    outline: none;
+}
+
+/* Estilo para os botões */
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ecabab;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 60px;
+    margin-left: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover nos botões */
+form button:hover {
+    background-color: #b0faffd0;
+}
+
+/* Estilo para campos obrigatórios */
+form .required {
+    color: #ff3333;
+}
+
+/* Mensagens de erro */
+form .error-message {
+    color: #ff3333;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para texto auxiliar (como ajuda ou dicas nos campos) */
+form .helper-text {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    form input, form select, form textarea {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}
+
+/* Estilo do botão de "voltar" */
+button{
+        margin: 30px;
+        width: 100%;
+        padding: 13px;
+        background-color: #ffbac0;
+        color: #fff;
+        position: center;
+        font-size: 18px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    /* Efeito de hover nos botões */
+    button:hover {
+        background-color: #fcc0c5;
+    }
+    
+#mensagem-confirmacao{
+    margin: 30px;
+    position: center;
+
+}
+footer{
+    margin: 15px;
+}
+#qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Inicialmente escondido */
+}
+
+#qr-code-container img {
+    width: 200px; /* Definir o tamanho do QR Code */
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

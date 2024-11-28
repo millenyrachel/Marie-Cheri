@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/logo_loren-removebg-preview.png" />
+    <title>Marie Chéri</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Seu arquivo de estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Formulário de Entrega</h1>
+    </header>
+        
+    <main>
+        <h2>Por favor, preencha seus dados de entrega abaixo:</h2>
+        
+        <!-- Formulário de pedido -->
+        <form id="formulario" action="enviar-pedido.php" method="POST" onsubmit="confirmarPedido(event)">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br><br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required><br><br>
+            
+            <button type="submit">Confirmar Pedido</button>
+            <div id="qr-code-container" style="display:none; text-align: center; margin-top: 20px;">
+                <h2>Escaneie o QR Code para finalizar o pagamento e o pedido</h2>
+                <img src="imagens/qrcode-pix.png" alt="QR Code para pagamento" />
+            </div>
+        </form>
+
+        <!-- Mensagem de confirmação -->
+        <div id="mensagem-confirmacao" style="display: none;">
+            <h3>Pedido confirmado para a entrega! Assim que verificarmos seu pagamento, ele será preparado!</h3>
+            <p>Agradecemos pela compra. Você será redirecionado para a loja.</p>
+            <a href="index.html"><button>Voltar à Loja</button></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Marie Chéri. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função que é chamada ao enviar o formulário
+        function confirmarPedido(event) {
+            event.preventDefault(); // Impede que o formulário seja enviado normalmente
+
+            // Oculta o formulário
+            document.getElementById('formulario').style.display = 'none';
+
+            // Exibe a mensagem de confirmação
+            document.getElementById('mensagem-confirmacao').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

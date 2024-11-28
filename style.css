@@ -1,17 +1,18 @@
-@import url('https://fonts.google.com/share?selection.family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color:#fabbbb;
-    font-family:'Abril Fatface',sans-serif;
-    font-size:15px;
-    display:flex;
-    margin: 10px;;
-    min-height:10vh;
-    
+    background-color: #c9ebf5b9;
+    font-family: 'Poppins', sans-serif; /* Fonte fofa e redonda */
+    font-size: 15px;
+    display: flex;
+    margin: 10px;
+    min-height: 10vh;
 }
+
 
 .models {
     display:none;
@@ -68,7 +69,7 @@ aside {
    position: absolute;
     background-color:#fabbbb;
     width: 0px;
-    font-family:'Abril Fatface',sans-serif;
+   font-family: 'Poppins', sans-serif;
     transition:all ease .2s;
     overflow-x:hidden;
     transform: translateX(100%);
@@ -95,7 +96,7 @@ main {
 }
 
 h1, h2 {
-    font-family:'Abril Fatface', sans-serif;
+  font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
@@ -107,7 +108,7 @@ h1, h2 {
 .pizza-item {
     text-align: center;
     max-width:200px;
-    font-family:'Abril Fatface', sans-serif;
+ font-family: 'Poppins', sans-serif;
     margin:50px auto 10px auto;
 }
 
@@ -137,9 +138,9 @@ h1, h2 {
     height:50px;
     line-height:50px;
     border-radius:10px;
-    background-color:#ff98bb9d;
+    background-color:#f7a6b088;
     text-align:center;
-    color:#e9487e9d;
+    color:#fff4f6;
     font-size:25px;
     cursor:pointer;
     margin-top:-30px;
@@ -147,25 +148,25 @@ h1, h2 {
 }
 
 .pizza-item a:hover .pizza-item--add {
-    background-color:#ff82bcce;
+    background-color:#f7a6b0;
 }
 
 .pizza-item--price {
     font-size:25px;
-    color:#ff78a5;
+    color:#f7a6b0;
     margin-top:3px;
 }
 
 .pizza-item--name {
     font-size:25px;
     font-weight: bold;
-    color:#f5e8ee;
+    color:#e98a95;
     margin-top:3px;
 }
 
 .pizza-item--desc {
     font-size:15px;
-    color:#ff78a5;
+    color:#f7a6b0;
     margin-top:5px;
 }
 
@@ -214,7 +215,7 @@ h1, h2 {
 
 .pizzaInfo {
     flex:1;
-    font-family:'Abril Fatface',sans-serif;
+   font-family: 'Poppins', sans-serif;
     padding-bottom:50px;
 }
 
@@ -226,7 +227,7 @@ h1, h2 {
     font-size:15px;
     color:#a19c9c;
     margin-top:10px;
-    font-family:'Abril Fatface',sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 .pizzaInfo--sector {
@@ -257,7 +258,7 @@ h1, h2 {
 }
 
 .pizzaInfo--size.selected {
-    background-color:#ff78a5;
+    background-color:#a1f0e5;
     color:#050505;
 }
 
@@ -267,7 +268,7 @@ h1, h2 {
 
 .pizzaInfo--size span {
     font-size:11px;
-    color:#777575;
+    color:#000000;
     font-weight: normal;
 }
 
@@ -310,15 +311,15 @@ h1, h2 {
     margin-top:30px;
     padding:20px 30px;
     border-radius:5px;
-    background-color:#b9e9de;
-    color:#FFF;
+    background-color:#a8f7f385;
+    color:#000000;
     display:inline-block;
     cursor:pointer;
     margin-right:30px;
 }
 
 .pizzaInfo--addButton:hover {
-    background-color:#f7a8c9af;
+    background-color:#a8f7f386;
 }
 
 .pizzaInfo--cancelButton {
@@ -382,7 +383,7 @@ h1, h2 {
 
 .cart--totalitem {
     padding:15px 0;
-    border-top:1px solid #570505;
+    border-top:1px solid #ff0000;
     color:#462b1b;
     display:flex;
     justify-content: space-between;
@@ -402,7 +403,7 @@ h1, h2 {
 .cart--finalizar {
     padding:20px 20px;
     border-radius:4px;
-    background-color:#d04875;
+    background-color:#eba2a2;
     color:#FFF;
     cursor:pointer;
     text-align:center;
@@ -601,7 +602,7 @@ h1, h2 {
     margin-top: 2px; /* Margem superior */
     padding: 10px; /* Espaçamento interno */
     border-radius: 10px; /* Bordas arredondadas */
-    background-color: #f8d2d2; /* Cor de fundo */
+    background-color: #e6a8b5c2; /* Cor de fundo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
     overflow: hidden; /* Garante que nada saia fora do limite da div */
 }
@@ -614,9 +615,9 @@ h1, h2 {
 }
 .foto-destaque-texto {
     font-size: 20px;
-    font-family: 'Abril Fatface',sans-serif;
+  font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    color: #e25a9e;
+    color: #ffffff;
     margin-top: 10px; /* Espaço entre a imagem e o texto */
     padding: 5px;
     line-height: 1.5;
@@ -627,7 +628,7 @@ h1, h2 {
 .menu-closer {
     font-size: 24px;
     font-weight: bold;
-    color:#fa1010;
+    color:#ffffff;
     cursor: pointer;
     position: absolute;
     top: 10px;
@@ -679,7 +680,7 @@ footer {
 }
 
 .footer-info a {
-    color: #f06996; /* Cor do link */
+    color: #e9adad; /* Cor do link */
     text-decoration: none; /* Remove sublinhado do link */
 }
 
@@ -738,7 +739,7 @@ footer {
 }
 
 .social-icons a {
-    color: #ffe5acc2;
+    color: #f7a2ad;
     text-decoration: underline; /* Remove o sublinhado do link */
 }
 
@@ -756,7 +757,7 @@ footer {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  color:#fde9c3;
+  color:#c8f7ff;
 }
 .qr-code-container {
     text-align: right; /* Centraliza o título e o QR Code */
@@ -768,7 +769,7 @@ footer {
     font-size: 20px; /* Tamanho da fonte */
     margin-bottom: 10px; /* Espaçamento entre o título e o QR Code */
     color: #333; /* Cor do título */
-    font-family: 'Abril Fatface',sans-serif; /* Fonte do título */
+    font-family: 'Poppins', sans-serif; /* Fonte do título */
 }
 
 .qr-code {

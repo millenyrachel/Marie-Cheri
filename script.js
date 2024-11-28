@@ -246,9 +246,8 @@ const atualizarCarrinho = () => {
 
       seleciona(".cart").append(cartItem);
     }
-
-    desconto = subtotal * 0;
-    total = subtotal - desconto;
+    desconto= 10;
+    total = subtotal + desconto;
 
     seleciona(".subtotal span:last-child").innerHTML = formatoReal(subtotal);
     seleciona(".desconto span:last-child").innerHTML = formatoReal(desconto);
@@ -258,7 +257,16 @@ const atualizarCarrinho = () => {
     seleciona("aside").style.left = "100vw";
   }
 };
-
+const iniciarPagamento = () => {
+  seleciona("botao-pagamento").addEventListener("click", () => {
+    console.log("Iniciar pagamento");
+    seleciona("aside").classList.remove("show");
+    seleciona("aside").style.left = "100vw";
+    seleciona("header").style.display = "flex";
+    alert("Redirecionando para o pagamento...");
+    window.location.href = "/pag.html";
+  });
+};
 const finalizarCompra = () => {
   seleciona(".cart--finalizar").addEventListener("click", () => {
     console.log("Finalizar compra");
@@ -266,16 +274,7 @@ const finalizarCompra = () => {
     seleciona("aside").style.left = "100vw";
     seleciona("header").style.display = "flex";
     alert("Pedido Feito");
-    
-  });
-};
-const pagamento = () => {
-  seleciona(".pagamento").addEventListener("click", () => {
-    console.log("Pagar com pix");
-    seleciona("aside").classList.remove("show");
-    seleciona("aside").style.left = "100vw";
-    seleciona("header").style.display = "flex";
-    alert("Pagamento realizado.");
+    window.location.href= "/form.html"
   });
 };
 
@@ -312,4 +311,3 @@ adicionarNoCarrinho();
 atualizarCarrinho();
 fecharCarrinho(); // Chamar a função para fechar o carrinho
 finalizarCompra();
-
